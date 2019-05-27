@@ -197,10 +197,11 @@
                         if (TuringTest) {
                             // succ
                             this.containerSuccess = true;
+                            this.reset()
                             this.$emit('success')
                         } else {
                             this.containerFail = true;
-                            this.sliderText = 'try again'
+                            this.sliderText = '请重试'
                             this.reset()
                         }
                     } else {
@@ -239,10 +240,11 @@
                     if (TuringTest) {
                         // succ
                         this.containerSuccess = true;
+                        this.reset()
                         this.$emit('success')
                     } else {
                         this.containerFail = true;
-                        this.sliderText = 'try again'
+                        this.sliderText = '请重试'
                         this.reset()
                     }
                 } else {
